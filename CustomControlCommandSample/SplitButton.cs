@@ -127,8 +127,8 @@ namespace CustomControlCommandSample
                 if (routedCommand != null)
                 {
                     IInputElement commandTarget = CommandTarget;
-                    if (CommandTarget == null)
-                        CommandTarget = this;
+                    if (commandTarget == null)
+                        commandTarget = this;
 
                     canExecute = routedCommand.CanExecute(CommandParameter, commandTarget);
                 }
@@ -151,8 +151,8 @@ namespace CustomControlCommandSample
                 if (routedCommand != null)
                 {
                     IInputElement commandTarget = CommandTarget;
-                    if (CommandTarget == null)
-                        CommandTarget = this;
+                    if (commandTarget == null)
+                        commandTarget = this;
 
                     routedCommand.Execute(CommandParameter, commandTarget);
                 }
